@@ -1,3 +1,4 @@
+import ColorPicker from "./form/colorPicker";
 import FormRadio from "./form/radio";
 import { FormRadioProps } from "./form/types";
 
@@ -33,8 +34,7 @@ export default function MainForm(){
                     <FormRadio name={logoOrientation.name} options={logoOrientation.options}/>
                     <h2>Select the color pallete</h2>
                         <div className="generic-row">
-                        <label className="color-picker-label" htmlFor="colorA">Color A:</label>
-                        <input className="color-picker-input" type="color" name="colorA" id="colorA"></input>
+                        <ColorPicker id="color-picker-input"/>
                         <label className="color-picker-label" htmlFor="colorB">Color B:</label>
                         <input className="color-picker-input" type="color" name="colorB" id="colorB"></input>
                     </div>
