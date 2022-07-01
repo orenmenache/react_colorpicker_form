@@ -15,13 +15,6 @@ $radio-checked-indent: $check-radio-key * 0.25;
 
 // radio-checkbox mixins
 
-@mixin flexCenter($dir){
-    flex-direction: $dir;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @mixin flexRelative($dir){
     display: flex;
     flex-direction: $dir;
@@ -30,12 +23,14 @@ $radio-checked-indent: $check-radio-key * 0.25;
 
 @mixin checkbox-radio-container-area(){
     @include flexRelative(column);
+    padding-bottom: 1rem;
     align-items: left;
 }
 
 @mixin checkbox-radio-element-pair(){
     @include flexRelative(column);
     line-height: $radio-line-height;
+    align-items: inherit;
 }
 
 @mixin checkbox-radio-label(){

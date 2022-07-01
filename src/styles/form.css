@@ -4,4 +4,12 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5rem;
 }
+
+.color-picker-label {
+  padding: 0 0.5rem;
+}
+
+.color-picker-input {
+  padding: 0 0.5rem;
+}
 /*# sourceMappingURL=form.css.map */

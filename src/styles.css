@@ -7,6 +7,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  padding-bottom: 1rem;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
@@ -22,6 +23,9 @@
           flex-direction: column;
   position: relative;
   line-height: 1.8rem;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
 }
 
 .checkbox-element-pair label {
@@ -97,6 +101,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  padding-bottom: 1rem;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
@@ -112,6 +117,9 @@
           flex-direction: column;
   position: relative;
   line-height: 1.8rem;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
 }
 
 .radio-element-pair label {
@@ -189,18 +197,53 @@
   font-size: 1.5rem;
 }
 
-body {
+.color-picker-label {
+  padding: 0 0.5rem;
+}
+
+.color-picker-input {
+  padding: 0 0.5rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 .main-container {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
   margin: auto;
   color: #721745;
   background-color: #bec9e0;
   width: 500px;
+}
+
+.main-container h1 {
+  text-align: center;
+}
+
+.generic-row {
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.generic-col {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */

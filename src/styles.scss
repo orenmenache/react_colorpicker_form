@@ -5,14 +5,13 @@
 // Mixins
 
 @mixin centered {
-    align-content: center;
-    text-align: center;
     margin: auto;
 }
 
 // General
 
-body {
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -22,5 +21,21 @@ body {
     color: $main-foreground;
     background-color: $main-background;
     width: 500px;
-    //height: 500px;
+    h1 {
+        text-align: center;
+    }
+}
+
+.generic-row {
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    //background-color: green;
+}
+
+.generic-col {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
